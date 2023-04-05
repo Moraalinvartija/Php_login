@@ -23,7 +23,7 @@ https://user-images.githubusercontent.com/100047926/230224918-c882802d-c6aa-497f
 <h3> Structure </h3>
 <h4>footer.php </h4>
 <div> Footer for the website.</div>
-
+<hr>
 <h4> header.php</h4>
 <div>Header for the website, session is also started here </div>
 
