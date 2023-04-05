@@ -17,8 +17,8 @@ https://user-images.githubusercontent.com/100047926/230224918-c882802d-c6aa-497f
 <div>4. Users password is hashed to the database</div>
 <div>5. User inserted inputs are binded to parameters to avoid SQL injection</div>
 <div>6. Header and footer are their own separe php files for easier website updating</div>
-<div>7. New account cant be created if username or email is already in use (in database taken by another user). So no multiple accounts to same email</div>
+<div>7. New account cant be created if username or email is already in use (in database taken by another user).</div> <div> So no multiple accounts to same email</div>
 <div>8. User must</div>
-<div>9. Elements from navbar are different if user is logged in or not. (Replace default Sign up and Log in with Profile and Sign out when user is logged in)  </div>
+<div>9. Elements from navbar are different if user is logged in or not. </div> <div>(Replace default Sign up and Log in with Profile and Sign out when user is logged in)  </div>
 
 
