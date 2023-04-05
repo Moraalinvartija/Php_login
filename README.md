@@ -9,6 +9,7 @@
 https://user-images.githubusercontent.com/100047926/230224918-c882802d-c6aa-497f-b761-4b6494ac62eb.mp4
 
 
+<hr>
 <h3>Description </h3>
 <div> School project was to make an login system with procedural php. Here are the features that I included to this school work: </div>
 <div>1. User can make new account if they dont already have one.</div>
@@ -19,11 +20,10 @@ https://user-images.githubusercontent.com/100047926/230224918-c882802d-c6aa-497f
 <div>6. Header and footer are their own separe php files for easier website updating</div>
 <div>7. New account cant be created if username or email is already in use (in database taken by another user).No multiple accounts to same email</div>
 <div>8. Elements from navbar are different if user is logged in or not. </div> <div>(Replace default Sign up and Log in with Profile and Sign out when user is logged in)  </div>
-
+<hr>
 <h3> Structure </h3>
 <h4>footer.php </h4>
 <div> Footer for the website.</div>
-<hr>
 <h4> header.php</h4>
 <div>Header for the website, session is also started here </div>
 
@@ -48,7 +48,7 @@ https://user-images.githubusercontent.com/100047926/230224918-c882802d-c6aa-497f
 <h4> signup.inc.php</h4>
 <div>All the functionality for signing up new user is done. We get every user given input into parameters -> check that there is no empty inputs, username doesnt contain unwanted characters, email is valid, password matches with password again input and lastly check that user given username or email are not being used by another user (check if they already exists in database). </div>
 <div> If all is ok and no errors are displayed -> new user is created, inserted into database </div>
-
+<hr>
 
 
 <h4> functions.inc.php</h4>
