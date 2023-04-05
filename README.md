@@ -40,7 +40,7 @@ https://user-images.githubusercontent.com/100047926/230224918-c882802d-c6aa-497f
 <h3> signup.php</h3>
 <div>Signup websites body that has header.php and footer.php included. Here is our sign up form where we check errors and display messages accordind to errors.</div>
 
-<h3> pdv.inc.php</h3>
+<h3> dbh.inc.php</h3>
 <div>Connection to database is established here.</div>
 
 <h3> login.inc.php</h3>
