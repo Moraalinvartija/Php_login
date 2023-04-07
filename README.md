@@ -1,13 +1,13 @@
 # Php_login
 <h2> Info </h2>
-<div>PHP login system made as school project. All the functionality is there, but no styling sadly </div>
+<div>PHP login system made as school project.</div>
 <div>SQL file that makes table with keys so that they match with code that is used in this project. Just make database named "phplogin" where you insert the SQL file so that it matches the data in the connection info (db.inc.php) </div>
 
 
 <h2> Example video</h2>
 
 
-https://user-images.githubusercontent.com/100047926/230224918-c882802d-c6aa-497f-b761-4b6494ac62eb.mp4
+https://user-images.githubusercontent.com/100047926/230641668-2ed23e17-530d-44ae-a858-84e451815dae.mp4
 
 
 <hr>
