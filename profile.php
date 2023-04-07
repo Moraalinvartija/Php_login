@@ -2,9 +2,7 @@
     <?php 
     include_once "header.php"
     ?>
-    <div class="wrapper"> 
-        <section > 
-            <h2> Profile page</h2>
+    
             <?php 
             if (isset($_SESSION["useruid"])) {   //tsekkaa onko käyttäjä kirjautunut sisälle ja jos on ---> avaa lisää linkkejä sivustolle
                 require_once 'includes/dbh.inc.php';
@@ -20,14 +18,22 @@
                     $lastName = $row['usersLname'];
                     $Email = $row['usersEmail'];
                     $userID = $row['usersUid'];
-                    echo ' <h3> Käyttäjätiedot </h3>
+                    echo '<div class="wrapper"> 
+                    <div class="mt-2 mb-4 text-center name">
+                            <h2>Profile page</h2>
+                        </div>
+                        <hr> <div class="mt-2 mb-4 text-center name">
+                    <h3>User info</h3></div>
+                    <div class="mt-2 mb-4 name">
                     <p> First name: ',$firstName,'<br>
                     Last name: ',$lastName,' <br>
                     Email name: ',$Email,'<br>
-                    User ID name: ',$userID,'</p>';
+                    User ID name: ',$userID,'</p>
+                    </div>';
+                    
                   }
                 }
-            }
+            } 
             ?>
         </section>
     </div>

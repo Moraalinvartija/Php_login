@@ -3,44 +3,49 @@ session_start();
 ?>
 
 <!DOCTYPE html>
+<html lang="en">
+
 <head>
+    <title>Log in System</title>
     <meta charset="utf-8">
-    <title> Sisäänkirjautumis tehtävä</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
+
 <body>
-<nav>
-        <div class="wrapper">
-            
-            <a href="index.php"> </a>
-            <ul>
-                <li><a href="index.php">Home</a></li>
-                
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.php">Home</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto">
+      </ul>
+      <ul class="navbar-nav mr-auto">
+   
+
+
+                <!-- href='includes/logout.inc.php'>Sign out</a></li>"; -->
                 <?php
                 if (isset($_SESSION["useruid"])) {   //tsekkaa onko käyttäjä kirjautunut sisälle ja jos on ---> avaa lisää linkkejä sivustolle
-                    echo" <li style='float:right'><a href='includes/logout.inc.php'>Sign out</a></li>";
-                    echo" <li style='float:right'><a href='profile.php'>Profile</a></li>";
-
-
+                    echo " <li class='nav-item'><a class='nav-link' href='includes/logout.inc.php'>Sign out</a></li>";
+                    echo " <li class='nav-item'><a class='nav-link' href='profile.php'>Profile</a></li>";
                 } else {
-
                 }
 
                 ?>
                 <?php
                 if (!isset($_SESSION["useruid"])) {   //tsekkaa onko käyttäjä kirjautunut sisälle ja ei---> avaa nämä linkit sen sijaan
-                    echo" <li style='float:right'><a href='login.php'>Login</a></li>";
-                    echo"<li style='float:right'><a href='signup.php'>Sign up</a></li>";
-
-
+                    echo " <li class='nav-item'><a class='nav-link' href='login.php'>Login</a></li>";
+                    echo "<li class='nav-item'><a class='nav-link' href='signup.php'>Sign up</a></li>";
                 }
                 ?>
-                
-            </ul>
-            
-       
+      </ul>
+</div>
+  </div>
+</nav>
     </nav>

@@ -84,7 +84,7 @@ function createUser($conn, $fname, $lname, $email, $uid, $pwd) {   //käyttäjä
     exit();
  }
 
- function emptyInputLogin($username, $pwd) {  //functio tarkistaa että käyttäjätunnus ja salasana kentät eivät ole tyhjiä
+ function emptyInputLogin($username, $pwd) {  //functio tarkistaa että käyttäjätunnus ja salasana db:ssä
     $result;
     if (empty($username) || empty($pwd)) {
         $result = true;
