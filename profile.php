@@ -27,8 +27,8 @@
                     <div class="mt-2 mb-4 name">
                     <p> First name: ',$firstName,'<br>
                     Last name: ',$lastName,' <br>
-                    Email name: ',$Email,'<br>
-                    User ID name: ',$userID,'</p>
+                    Email: ',$Email,'<br>
+                    User ID: ',$userID,'</p>
                     </div>';
                     
                   }
